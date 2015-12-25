@@ -17,4 +17,4 @@ If there is a tuple in the queue Consumer takes it and updates the user view wit
 Consumer might fail with 20% probability after the tuple has been taken from the queue. In this case the data needs to be returned to the queue.
 
 ***
-NB In real situation we’ll need to clear the queue time to time in some way (removing the low-priority data, dumping data to db) otherwise it may grow and grow (the velocity of growing depends on services’ timeouts and the errors frequency)
+NB In a real situation we’ll need to clear the queue from time to time in some way (removing the low-priority data, dumping data to db) otherwise it may grow and grow (the velocity of growing depends on the services’ timeouts and the errors' frequency)
